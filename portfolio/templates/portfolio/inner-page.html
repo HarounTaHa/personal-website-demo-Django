@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>{{ service.title_service }}</h2>
+          <ol>
+            <li><a href="{% url 'portfolio:index' %}">Home</a></li>
+            <li>Service Page</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+
+        <div class="section-title">
+            <h2>{{ service.title_service }}</h2>
+            <!-- <p>I am a person who is passionate about technology. I love to work with Cloud based technologies. I have extensive knowledge on AWS and Microsoft Azure. For me Learning is an every day process to the exponential curve.</p> -->
+        </div>
+               <div class="row">
+            <div class="col-lg-4" data-aos="fade-right">
+                <img src="../images/{{ service.image_service }}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                <h3>Description</h3>
+                <p></p>
+                <p>
+                    {{ service.description_service }}
+                </p>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+{% endblock %}

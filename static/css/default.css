@@ -1,0 +1,22 @@
+.rating {
+	background-image: url('../img/starlist-off.svg');
+	width: 200px;
+	height: 40px;
+	align-items: center;
+	margin-left: 110px;
+	margin-top: 10px;
+	background-size: 200px;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.rating div {
+	display:inline-block;
+	width:40px;
+	height:40px;
+	float:left;
+}
+.rating div.active {
+	background-image: url('../img/starlist.svg');
+	background-size: 200px;
+	background-repeat: no-repeat;
+}
