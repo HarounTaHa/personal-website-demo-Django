@@ -1,6 +1,4 @@
 # personal-website-demo-Django
-description project => https://docs.google.com/document/d/1XL1_uxPRdXXw8-J1g1EBtnTDlsJg5UraWReZVcZfcjc/edit
-
 
                     creating folder command : python -m venv env
                     
